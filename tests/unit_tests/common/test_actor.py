@@ -1641,7 +1641,7 @@ class TestActor:
         # Assert
         assert self.data_engine.command_count == 2
 
-    def test_subscribe_order_book_depth10(self) -> None:
+    def test_subscribe_order_book_depth(self) -> None:
         # Arrange
         actor = MockActor()
         actor.register_base(
@@ -1657,7 +1657,7 @@ class TestActor:
         # Assert
         assert self.data_engine.command_count == 1
 
-    def test_unsubscribe_order_book_depth10(self) -> None:
+    def test_unsubscribe_order_book_depth(self) -> None:
         # Arrange
         actor = MockActor()
         actor.register_base(
